@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Margen</title>
+
+</head>
+<body>
+
+    <h1>Calculadora de Margen</h1>
+
+    <div>
+
+        <input type="text" id="codigoProducto" placeholder="Ingrese código del producto">
+        <button id="buscarProductoBtn">Buscar Producto</button>
+        <div id="resultado">
+
+    </div>
+
+
+    <div>
+        <h3>Plataforma</h3>
+        <select id="plataforma" name="plataforma">
+            <option value="Mercado Libre">Mercado Libre</option>
+            <option value="Mercado Shops">Mercado Shops</option>
+        </select>
+    </div>
+
+    <div>
+        <h3 for="costoBruto">Costo Bruto:</h3>
+        <input type="number" id="costoBruto" placeholder="Ingresa el costo bruto">
+    </div>
+    
+    <div>
+        <h3 for="precioVenta">Precio de Venta:</h3>
+        <input type="number" id="precioVenta" placeholder="Ingresa el precio de venta">
+    </div>
+    
+    <!-- Botón -->
+    <div>
+        <button id="calcularBtn">Calcular</button>
+    </div>
+    
+    <div>
+        <p>Costo Total: <span id="costoTotal"></span></p>
+        <ul>
+            <li>Despacho: <span id="despachoValue"></span></li>
+            <li>Comisiones(17%): <span id="comisionesValue"></span></li>
+        </ul>
+        <canvas id="margenGrafico" width="400" height="400"></canvas>
+        <h2>Margen de Venta: <span id="margenVenta"></span></h2>
+        <p>Monto: <span id="margenBruto"></span></p>
+
+    </div>
+
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
